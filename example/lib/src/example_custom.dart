@@ -143,7 +143,7 @@ class _ExampleCustomState extends State<ExampleCustom> {
       },
       curve: _curve,
       scale: _scale,
-      itemWidth: 300.0,
+      itemWidth: double.infinity,
       controller: _controller,
       layout: _layout,
       outer: _outer,
@@ -202,7 +202,7 @@ class _ExampleCustomState extends State<ExampleCustom> {
                     onPressed: () {
                       final text = numberController.text;
                       setState(() {
-                        _currentIndex = int.parse(text);
+                        _currentIndex = int.parse(text.isNotEmpty ? text : '0');
                       });
                     },
                     child: const Text('Update'),

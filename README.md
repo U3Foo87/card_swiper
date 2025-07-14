@@ -1,4 +1,4 @@
-![Logo](banner.jpg)
+d![Logo](banner.jpg)
 
 <p align="center">
     <a href="https://github.com/TheAnkurPanchani/flutter_swiper/pulls">
