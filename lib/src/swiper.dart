@@ -844,12 +844,12 @@ class _TinderState extends _CustomLayoutStateBase<_TinderSwiper> {
       offsetsY = [0.0, 0.0, 0.0, 0.0, _swiperHeight, _swiperHeight];
     } else {
       offsetsX = [
-        -10.0,
-        5.0,
-        20.0,
-        35.0,
-        50.0,
-        65.0,
+        -30.0,
+        0.0,
+        30.0,
+        70.0,
+        100.0,
+        130.0,
       ];
 
       offsetsY = [0.0, 0.0, 0.0, 0.0, _swiperHeight, _swiperHeight];
