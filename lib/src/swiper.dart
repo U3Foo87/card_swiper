@@ -832,15 +832,16 @@ class _TinderState extends _CustomLayoutStateBase<_TinderSwiper> {
 
   void _updateValues() {
     if (widget.scrollDirection == Axis.horizontal) {
-      offsetsX = [0.0, 0.0, 0.0, 0.0, _swiperWidth, _swiperWidth];
-      offsetsY = [
-        0.0,
-        0.0,
-        -5.0,
+      offsetsX = [
         -10.0,
-        -15.0,
-        -20.0,
+        5.0,
+        20.0,
+        35.0,
+        50.0,
+        65.0,
       ];
+
+      offsetsY = [0.0, 0.0, 0.0, 0.0, _swiperHeight, _swiperHeight];
     } else {
       offsetsX = [
         -10.0,
@@ -873,7 +874,7 @@ class _TinderState extends _CustomLayoutStateBase<_TinderSwiper> {
         angle: a / 180.0,
         child: Transform.translate(
           key: ValueKey<int>(_currentIndex + i),
-          offset: Offset(f, fy),
+          offset: Offset(f, 0),
           child: Transform.scale(
             scale: s,
             alignment: alignment,
